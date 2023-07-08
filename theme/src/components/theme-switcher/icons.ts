@@ -1,5 +1,15 @@
 import { html } from 'lit';
 
+export const logoLK = html`<svg
+	viewBox="0 0 566.929 566.929" 
+	width="566.929" 
+	height="566.929"
+>
+	<path d=" M 170.079 170.079 L 170.079 396.85 L 306.142 396.85 L 260.787 351.496 L 215.433 351.496 L 215.433 170.079 L 170.079 170.079 Z " fill="currentColor" vector-effect="non-scaling-stroke" stroke-width="1" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+	<path d=" M 365.669 170.079 L 249.449 283.465 L 365.669 396.85 L 429.817 396.85 L 313.597 283.465 L 429.817 170.079 L 365.669 170.079 Z " fill="currentColor" vector-effect="non-scaling-stroke" stroke-width="1" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+	<path d=" M 21.26 283.465 C 21.26 138.75 138.75 21.26 283.465 21.26 C 428.179 21.26 545.669 138.75 545.669 283.465 C 545.669 428.179 428.179 545.669 283.465 545.669 C 138.75 545.669 21.26 428.179 21.26 283.465 Z " fill="none" vector-effect="non-scaling-stroke" stroke-width="42" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+</svg>`;
+
 export const classicThemeIcon = html`<svg
 	width="24"
 	height="24"
