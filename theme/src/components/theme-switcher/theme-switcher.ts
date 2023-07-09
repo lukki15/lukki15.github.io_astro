@@ -138,6 +138,7 @@ export class ThemeSwitcher extends LitElement {
 		})}`
 
 		return html`
+			<h4>Theme selector:</h4>
 			<div class="theme-switcher__container">
 				${themeButtons}
 			</div>
