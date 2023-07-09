@@ -102,19 +102,19 @@ export class ThemeSwitcher extends LitElement {
 		const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (_heroImage) {
 			if (theme === 'default') {
-				_heroImage.src = '/assets/images/home/classic-hero.jpg';
+				_heroImage.style.filter = 'invert(0%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(95%) contrast(103%)';
 			}
 			if (theme === 'dark') {
-				_heroImage.src = '/assets/images/home/dark-hero.jpg';
+				_heroImage.style.filter = 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(356deg) brightness(108%) contrast(104%)';
 			}
 			if (theme === 'earth') {
-				_heroImage.src = '/assets/images/home/earth-hero.jpg';
+				_heroImage.style.filter = 'invert(22%) sepia(14%) saturate(764%) hue-rotate(73deg) brightness(97%) contrast(99%)';
 			}
 			if (theme === 'ocean') {
-				_heroImage.src = '/assets/images/home/ocean-hero.jpg';
+				_heroImage.style.filter = 'invert(23%) sepia(28%) saturate(7092%) hue-rotate(207deg) brightness(84%) contrast(84%)';
 			}
 			if (theme === 'sand') {
-				_heroImage.src = '/assets/images/home/sand-hero.jpg';
+				_heroImage.style.filter = 'invert(67%) sepia(65%) saturate(2454%) hue-rotate(348deg) brightness(94%) contrast(89%)';
 			}
 		}
 		localStorage.setItem('theme', theme);
