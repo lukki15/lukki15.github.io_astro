@@ -1,8 +1,8 @@
 ---
-import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+import { Container, FeatureCard } from "@littlesticks/odyssey-theme-components";
 
-import Layout from '../layouts/Page.astro';
-import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import Layout from "../layouts/Page.astro";
+import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro";
 ---
 
 <Layout>
@@ -11,16 +11,48 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		<section class="feature-card__section">
 			<h2>3D Printing</h2>
 			<p>
-				In 2015 I bought my first 3D-printer from Kickstarter.
-				From there I started to modify my printer constantly and learning different CAD programms.
+				In 2015 I bought my first 3D-printer from Kickstarter. From
+				there I started to modify my printer constantly and learning
+				different CAD programms.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/blog/posts/3d-printing-journey" title="My journay into 3D-printing" imgSrc="assets/images/home/3d_printing/printing-journay">
-				</FeatureCard>
-				<FeatureCard href="https://www.printables.com/@lukki15" title="Printables Account" imgSrc="assets/images/home/3d_printing/printables-logo">
-				</FeatureCard>
-				<FeatureCard href="https://github.com/lukki15/Marlin-Ender5" title="Marlin Ender 5 Fork" imgSrc="assets/images/home/3d_printing/marlin-firmware-logo">
-				</FeatureCard>
+				<FeatureCard
+					href="/blog/posts/3d-printing-journey"
+					title="My journay into 3D-printing"
+					imgSrc="assets/images/home/3d_printing/printing-journay"
+				/>
+				<FeatureCard
+					href="https://www.printables.com/@lukki15"
+					title="Printables Account"
+					imgSrc="assets/images/home/3d_printing/printables-logo"
+				/>
+				<FeatureCard
+					href="https://github.com/lukki15/Marlin-Ender5"
+					title="Marlin Ender 5 Fork"
+					imgSrc="assets/images/home/3d_printing/marlin-firmware-logo"
+				/>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2>Game James</h2>
+			<p>
+				When I want to learn a new programming language, I like to join
+				game james to give myself a strict timelimit to learn as much as
+				possible in a short time.
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="https://github.com/lukki15/butterfly-effect"
+					title="Rust: butterfly effect"
+					imgSrc="assets/images/home/game_james/butterfly-effect"
+				/>
+				<FeatureCard
+					href="https://github.com/lukki15/music_blocks"
+					title="Flutter: music blocks"
+					imgSrc="assets/images/home/game_james/music-logo"
+				/>
 			</div>
 		</section>
 	</Container>
