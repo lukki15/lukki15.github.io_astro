@@ -1,0 +1,93 @@
+---
+layout: '../../../layouts/Post.astro'
+title: C++ integer based power function
+description: Efficient way to implement an integer based power function.
+publishDate: 21 July 2023
+featuredImage: '/assets/images/blog/cpp-integer-power/power.webp'
+excerpt: 'Efficient way to implement pow(int, int)'
+tags:
+    - C++
+---
+
+C++ is a powerful programming language known for its versatility and extensive standard library.
+However, one area where it lacks a standardized function is calculating the power of an integer.
+While some languages provide this functionality out of the box, 
+C++ does not offer a dedicated power function for integers in its standard library.
+In this blog post, we will delve into the reasons behind this absence and explore alternative approaches to perform exponentiation on integers.
+
+## Why is there no Integer Power Function in C++?
+
+The absence of a dedicated integer power function in the C++ standard library may appear baffling at first,
+especially since many other programming languages do include such functionality.
+However, there are a few reasons behind this omission:
+
+1. Simplicity: 
+The C++ standard library focuses on providing essential building blocks rather than including advanced or specialized functionality. 
+Calculating the power of an integer falls into the latter category, and thus was not included in the standard library to maintain simplicity.
+
+1. Performance considerations:
+Integer exponentiation can be a costly operation, particularly when dealing with large numbers.
+Implementing it as a standard function would require considering different optimization techniques
+and potentially lead to performance inconsistencies across different platforms.
+
+## Implementation examples
+
+### Simple implementation 
+with `O(exp)` runtime:
+```cpp
+int ipow(int base, unsigned int exp){
+    if(exponent == 0) return 1;
+    if(exponent == 1) return base;
+    return base * ipow(base, exp - 1);
+}
+```
+
+### Optimization implementation
+with `O(log(exp))` runtime;
+```cpp
+int ipow(int base, unsigned int exp){
+    if(exp == 0) return 1;
+    if(exp == 1) return base;
+
+    int tmp = ipow(base, exp >> 1);
+    if(exp % 2 == 0) return tmp * tmp;
+    return base * tmp * tmp;
+}
+```
+or in iterative style:
+```cpp
+int ipow(int base, unsigned int exp){
+    int result = 1;
+    while(true){
+        if(exp & 1) result *= base;
+        exp >>= 1;
+        if(!exp) break;
+        base *= base;
+    }
+    return result;
+}
+```
+
+### At compile time
+with `constexpr`:
+```cpp
+constexpr int ipow(int base, unsigned int exp){
+    if(exp == 0) return 1;
+    if(exp == 1) return base;
+
+    int tmp = ipow(base, exp >> 1);
+    if (exp % 2 == 0) return tmp * tmp;
+    return base * tmp * tmp;
+}
+```
+
+with template meta programming:
+```cpp
+template<typename T, T BASE, unsigned int EXP> struct ipow {
+    constexpr static const T value = BASE * ipow<T, BASE, EXP-1>::value;
+};
+
+template<typename T, T BASE> struct ipow<T, BASE,0> {
+    constexpr static const T value = 1;
+};
+```
