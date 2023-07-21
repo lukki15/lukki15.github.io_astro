@@ -9,15 +9,20 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>C++ Projects</h2>
+			<h2>WASM Projects</h2>
 			<p>
-				A few of my most interesting C++ prjoects.
+				My experiments with WebAssembly.
 			</p>
 			<div class="feature-card__grid">
 				<FeatureCard
+					href="https://github.com/lukki15/wasm-angular"
+					title="Speedup Angular with webworkers"
+					imgSrc="assets/images/home/wasm/wasm-angular"
+				/>
+				<FeatureCard
 					href="https://github.com/lukki15/wasm-protobuf"
 					title="Compile protobuf with WASM"
-					imgSrc="assets/images/home/cpp/wasm-protobuf"
+					imgSrc="assets/images/home/wasm/wasm-protobuf"
 				/>
 			</div>
 		</section>
