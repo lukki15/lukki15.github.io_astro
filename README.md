@@ -1,6 +1,11 @@
 # Portfolio
 
-More detailed description to private 
+[HOMEPAGE](https://lukki15.github.io/)
+
+Welcome to my personal website! I'm a dedicated C++ programmer with a penchant for exploring new technologies,
+specializing in high-performance computing.
+With a Master's degree in Informatics and years of experience as a software engineer,
+I have a deep understanding of programming languages, algorithms, and software development methodologies.
 
 ## Usage
 
