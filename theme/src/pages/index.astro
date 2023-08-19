@@ -1,8 +1,9 @@
 ---
-import { Container, FeatureCard } from "@littlesticks/odyssey-theme-components";
+import { Container } from '@littlesticks/odyssey-theme-components';
 
-import Layout from "../layouts/Page.astro";
-import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro";
+import FeatureCard from '../components/cards/FeatureCard.astro';
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
 
 <Layout>
@@ -12,7 +13,8 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 			<h2>C++ Projects</h2>
 			<div class="feature-card__grid">
 				<FeatureCard
-					href="https://github.com/lukki15/stable_partition_manim"
+					href="https://lukki15.github.io/stable_partition_manim/"
+					hrefGithub="https://github.com/lukki15/stable_partition_manim"
 					title="std::stable_partition() visualisation"
 					imgSrc="assets/images/home/cpp/stable-partition"
 				/>
@@ -27,12 +29,11 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 	<Container>
 		<section class="feature-card__section">
 			<h2>WASM Projects</h2>
-			<p>
-				My experiments with WebAssembly.
-			</p>
+			<p>My experiments with WebAssembly.</p>
 			<div class="feature-card__grid">
 				<FeatureCard
-					href="https://github.com/lukki15/wasm-angular"
+					href="https://lukki15.github.io/angular-wasm-webworker/"
+					hrefGithub="https://github.com/lukki15/angular-wasm-webworker"
 					title="Speedup Angular with webworkers"
 					imgSrc="assets/images/home/wasm/wasm-angular"
 				/>
@@ -48,9 +49,9 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 		<section class="feature-card__section">
 			<h2>3D Printing</h2>
 			<p>
-				In 2014 I bought my first 3D-printer from Kickstarter. From
-				there I started to modify my printer constantly and learning
-				different CAD programms.
+				In 2014 I bought my first 3D-printer from Kickstarter. From there I
+				started to modify my printer constantly and learning different CAD
+				programms.
 			</p>
 			<div class="feature-card__grid">
 				<FeatureCard
@@ -76,12 +77,14 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 			<h2>Web Development Projects</h2>
 			<div class="feature-card__grid">
 				<FeatureCard
-					href="https://github.com/lukki15/purecss-hugo-theme"
+					href="https://lukki15.github.io/purecss-hugo-theme/"
+					hrefGithub="https://github.com/lukki15/purecss-hugo-theme"
 					title="Hugo company template"
 					imgSrc="/assets/images/home/web/hugo-purecss"
 				/>
 				<FeatureCard
 					href="https://github.com/lukki15/patisserie-hugo-website"
+					hrefGithub="https://lukki15.github.io/patisserie-hugo-website/"
 					title="Hugo foto portfolio template"
 					imgSrc="/assets/images/home/web/hugo-purecss"
 				/>
@@ -92,18 +95,20 @@ import HomeHeroSection from "../components/sections/heros/HomeHeroSection.astro"
 		<section class="feature-card__section">
 			<h2>Game James</h2>
 			<p>
-				When I want to learn a new programming language, I like to join
-				game james to give myself a strict timelimit to learn as much as
-				possible in a short time.
+				When I want to learn a new programming language, I like to join game
+				james to give myself a strict timelimit to learn as much as possible in
+				a short time.
 			</p>
 			<div class="feature-card__grid">
 				<FeatureCard
-					href="https://github.com/lukki15/butterfly-effect"
+					href="https://lukki15.github.io/butterfly-effect/"
+					hrefGithub="https://github.com/lukki15/butterfly-effect"
 					title="Rust: butterfly effect"
 					imgSrc="assets/images/home/game_james/butterfly-effect"
 				/>
 				<FeatureCard
-					href="https://github.com/lukki15/music_blocks"
+					href="https://lukki15.github.io/music_blocks/"
+					hrefGithub="https://github.com/lukki15/music_blocks"
 					title="Flutter: music blocks"
 					imgSrc="assets/images/home/game_james/music-logo"
 				/>
