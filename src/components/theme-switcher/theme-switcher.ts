@@ -10,31 +10,31 @@ import {
 } from './icons';
 
 const themes = [
-  {
-    name: 'default',
-    icon: classicThemeIcon,
-    label: 'Classic',
-  },
-  {
-    name: 'dark',
-    icon: darkThemeIcon,
-    label: 'Dark',
-  },
-  {
-    name: 'earth',
-    icon: earthThemeIcon,
-    label: 'Earth',
-  },
-  {
-    name: 'ocean',
-    icon: blueThemeIcon,
-    label: 'Ocean',
-  },
-  {
-    name: 'sand',
-    icon: orangeThemeIcon,
-    label: 'Sand',
-  }
+	{
+		name: 'default',
+		icon: classicThemeIcon,
+		label: 'Classic',
+	},
+	{
+		name: 'dark',
+		icon: darkThemeIcon,
+		label: 'Dark',
+	},
+	{
+		name: 'earth',
+		icon: earthThemeIcon,
+		label: 'Earth',
+	},
+	{
+		name: 'ocean',
+		icon: blueThemeIcon,
+		label: 'Ocean',
+	},
+	{
+		name: 'sand',
+		icon: orangeThemeIcon,
+		label: 'Sand',
+	}
 ]
 
 @customElement('theme-switcher')
@@ -79,9 +79,6 @@ export class ThemeSwitcher extends LitElement {
 		`,
 	];
 
-	// set the _doc element
-	private _doc = document.firstElementChild;
-
 	@property({ type: String })
 	theme: string | null = null;
 
@@ -101,36 +98,38 @@ export class ThemeSwitcher extends LitElement {
     }
 	}
 
-  firstUpdated() {
-    this._getCurrentTheme();
-  }
+	firstUpdated() {
+		this._getCurrentTheme();
+	}
 
 	private _setTheme(theme) {
-		this._doc.setAttribute('data-theme', theme);
+		document.firstElementChild.setAttribute('data-theme', theme);
 
-    const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
-		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/classic-hero.jpg';
-		}
-		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/dark-hero.jpg';
-		}
-		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/earth-hero.jpg';
-		}
-		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/ocean-hero.jpg';
-		}
-		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/sand-hero.jpg';
+		const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
+		if (_heroImage) {
+			if (theme === 'default') {
+				_heroImage.style.filter = 'invert(0%) sepia(0%) saturate(0%) hue-rotate(148deg) brightness(95%) contrast(103%)';
+			}
+			if (theme === 'dark') {
+				_heroImage.style.filter = 'invert(100%) sepia(0%) saturate(7500%) hue-rotate(356deg) brightness(108%) contrast(104%)';
+			}
+			if (theme === 'earth') {
+				_heroImage.style.filter = 'invert(22%) sepia(14%) saturate(764%) hue-rotate(73deg) brightness(97%) contrast(99%)';
+			}
+			if (theme === 'ocean') {
+				_heroImage.style.filter = 'invert(23%) sepia(28%) saturate(7092%) hue-rotate(207deg) brightness(84%) contrast(84%)';
+			}
+			if (theme === 'sand') {
+				_heroImage.style.filter = 'invert(67%) sepia(65%) saturate(2454%) hue-rotate(348deg) brightness(94%) contrast(89%)';
+			}
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
 	}
 
 	render() {
-    const themeButtons = html`${themes.map((theme) => {
-      return html`
+		const themeButtons = html`${themes.map((theme) => {
+			return html`
       <div class="theme-select__container">
         <button
           @click=${() => this._setTheme(theme.name)}
@@ -142,9 +141,10 @@ export class ThemeSwitcher extends LitElement {
         <p>${theme.label}</p>
         </div>
       `
-    })}`
+		})}`
 
 		return html`
+			<p><b>Theme selector:</b></p>
 			<div class="theme-switcher__container">
 				${themeButtons}
 			</div>

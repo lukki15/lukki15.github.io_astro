@@ -1,6 +1,7 @@
 ---
 import { Container, FeatureCard } from '@components/odyssey-theme';
 
+import FeatureCard from '../components/cards/FeatureCard.astro';
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
@@ -9,67 +10,108 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
-			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
-			</p>
+			<h2>C++ Projects</h2>
 			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
+				<FeatureCard
+					href="https://lukki15.github.io/stable_partition_manim/"
+					hrefGithub="https://github.com/lukki15/stable_partition_manim"
+					title="std::stable_partition() visualisation"
+					imgSrc="assets/images/home/cpp/stable-partition"
+				/>
+				<FeatureCard
+					href="https://github.com/lukki15/hadwiger-nelson-problem"
+					title="Hadwiger Nelson problem solver"
+					imgSrc="assets/images/home/cpp/hadwiger-nelson"
+				/>
 			</div>
 		</section>
 	</Container>
-
 	<Container>
 		<section class="feature-card__section">
-			<h2>Company Pages</h2>
-			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
-			</p>
+			<h2>WASM Projects</h2>
+			<p>My experiments with WebAssembly.</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
 				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
+					href="https://lukki15.github.io/angular-wasm-webworker/"
+					hrefGithub="https://github.com/lukki15/angular-wasm-webworker"
+					title="Speedup Angular with webworkers"
+					imgSrc="assets/images/home/wasm/wasm-angular"
+				/>
 				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				>
-				</FeatureCard>
+					href="https://github.com/lukki15/wasm-protobuf"
+					title="Compile protobuf with WASM"
+					imgSrc="assets/images/home/wasm/wasm-protobuf"
+				/>
 			</div>
 		</section>
 	</Container>
-
 	<Container>
 		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
+			<h2>3D Printing</h2>
+			<p>
+				In 2014 I bought my first 3D-printer from Kickstarter. From there I
+				started to modify my printer constantly and learning different CAD
+				programms.
+			</p>
 			<div class="feature-card__grid">
 				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
+					href="/blog/posts/3d-printing-journey"
+					title="My journay into 3D-printing"
+					imgSrc="assets/images/home/3d_printing/printing-journay"
+				/>
 				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
+					href="https://www.printables.com/@lukki15"
+					title="Printables Account"
+					imgSrc="assets/images/home/3d_printing/printables-logo"
+				/>
+				<FeatureCard
+					href="https://github.com/lukki15/Marlin-Ender5"
+					title="Marlin Ender 5 Fork"
+					imgSrc="assets/images/home/3d_printing/marlin-firmware-logo"
+				/>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2>Web Development Projects</h2>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="https://lukki15.github.io/purecss-hugo-theme/"
+					hrefGithub="https://github.com/lukki15/purecss-hugo-theme"
+					title="Hugo company template"
+					imgSrc="/assets/images/home/web/hugo-purecss"
+				/>
+				<FeatureCard
+					href="https://github.com/lukki15/patisserie-hugo-website"
+					hrefGithub="https://lukki15.github.io/patisserie-hugo-website/"
+					title="Hugo foto portfolio template"
+					imgSrc="/assets/images/home/web/hugo-purecss"
+				/>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2>Game James</h2>
+			<p>
+				When I want to learn a new programming language, I like to join game
+				james to give myself a strict timelimit to learn as much as possible in
+				a short time.
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="https://lukki15.github.io/butterfly-effect/"
+					hrefGithub="https://github.com/lukki15/butterfly-effect"
+					title="Rust: butterfly effect"
+					imgSrc="assets/images/home/game_james/butterfly-effect"
+				/>
+				<FeatureCard
+					href="https://lukki15.github.io/music_blocks/"
+					hrefGithub="https://github.com/lukki15/music_blocks"
+					title="Flutter: music blocks"
+					imgSrc="assets/images/home/game_james/music-logo"
+				/>
 			</div>
 		</section>
 	</Container>

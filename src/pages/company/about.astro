@@ -2,6 +2,8 @@
 import { TextSection } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import { ThemeSwitcher } from '../../components/theme-switcher/theme-switcher';
+import settings from '../../config/settings.js';
 
 const seo = {
 	title: 'About | Astro Odyssey Theme',
@@ -12,36 +14,75 @@ const seo = {
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
+			<h1>About me</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
+				Welcome to my personal website! I'm a dedicated C++ programmer with a penchant for exploring new technologies,
+        specializing in high-performance computing.
+        With a Master's degree in Informatics and years of experience as a software engineer,
+        I have a deep understanding of programming languages, algorithms, and software development methodologies.
 			</p>
 		</div>
     <picture slot="image-container">
       <img
-        src="/assets/images/home/classic-hero.jpg"
-        alt="Astro Odyssee"
+        src="/assets/images/home/LK_Logo.png"
+        alt="LK Logo"
         id="home-hero-image"
       />
     </picture>
 	</HeroSection>
   <TextSection narrow>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
-    
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
+      {settings.enableThemeSwitcher && <ThemeSwitcher client:load />}
     </p>
     <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
+      In my spare time, I also enjoy indulging in the realm of web development as a personal side project.
+      It allows me to expand my skillset, challenge myself, and apply my expertise in a different domain.
+      Web development introduces me to exciting front-end frameworks, back-end technologies,
+      and in particular small tech demos.
+    </p>
+    <p>
+      My true passion lies in high-performance computing.
+      It's an area that allows me to blend my programming skills with my thirst for speed and optimization.
+      I relish the challenge of squeezing the last ounce of performance out of a system,
+      whether it's a desktop application, a distributed system, or an algorithmic solution.
+      I constantly seek to improve the efficiency and scalability of my code,
+      employing parallel programming techniques, memory optimization,
+      and code profiling to achieve unparalleled speed and responsiveness.
+    </p>
+      One of the things that truly sets me apart is my curiosity and eagerness to explore new technologies.
+      I believe that being well-versed in different tools and frameworks is crucial in staying at the forefront of the rapidly evolving tech industry.
+      I make it a point to stay up to date with the latest trends in software development,
+      attending industry conferences, engaging in online learning platforms, and regularly participating in hackathons and coding contests.
+      This passion for innovation ensures that my work remains fresh, dynamic, and relevant.
+    </p>
+    <p>
+      Beyond the world of programming, I also have an artistic side.
+      I'm a 3D printing enthusiast and designer, and I love transforming digital models into tangible objects.
+      I enjoy the fast prototyping that is possible with 3D-printing and designing functional models.
+      One of the ways I share my passion for 3D printing is by creating and uploading my designs for others to use, completely free of charge.
+      It brings me great joy to contribute to the vibrant 3D printing community,
+      and I'm always excited to see how my designs bring people's ideas to life.
+    </p>
+    <p>
+      Throughout my career, I've had the privilege of collaborating with talented individuals on diverse projects,
+      ranging from cutting-edge scientific simulations to large-scale enterprise systems.
+      I thrive in collaborative environments that foster creativity, open communication, and a relentless pursuit of excellence.
+      I'm an avid believer in the power of teamwork and the value it brings to problem-solving and innovation.
+    </p>
+    <p>
+      I created this website as a space to share my thoughts, experiences, and projects with the world.
+      Whether you're interested in high-performance computing, web development, or 3D printing, 
+      I hope you find something valuable and inspiring here.
+      Feel free to reach out if you have any questions, collaborate on a project, or simply want to connect.
+      Thank you for visiting, and I look forward to embarking on this journey together!
     </p>
   </TextSection>
 </Layout>
+
+
+
+
+
+
+
+
