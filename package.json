@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@astrojs/lit": "^4.0.1",
 		"@astrojs/mdx": "^2.1.1",
-		"@astrojs/sitemap": "^3.1.2",
+		"@astrojs/sitemap": "^3.1.4",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^4.4.13",
 		"astro-icon": "^1.1.0",
