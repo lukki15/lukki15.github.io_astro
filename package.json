@@ -14,16 +14,16 @@
 		"format": "npx prettier -w ."
 	},
 	"devDependencies": {
-		"@astrojs/lit": "^4.1.0",
-		"@astrojs/mdx": "^3.0.1",
-		"@astrojs/sitemap": "^3.1.5",
+		"@astrojs/lit": "^4.3.0",
+		"@astrojs/mdx": "^3.1.5",
+		"@astrojs/sitemap": "^3.1.6",
+		"@iconify-json/ic": "^1.2.0",
+		"@iconify-json/mdi": "^1.2.0",
 		"@webcomponents/template-shadowroot": "^0.2.1",
-		"astro": "^4.9.3",
-		"astro-icon": "^1.1.0",
+		"astro": "^4.15.1",
+		"astro-icon": "^1.1.1",
 		"date-fns": "^3.6.0",
-		"lit": "^3.1.4",
-		"prettier-plugin-astro": "^0.14.0",
-		"@iconify-json/ic": "^1.1.17",
-		"@iconify-json/mdi": "^1.1.64"
+		"lit": "^3.2.0",
+		"prettier-plugin-astro": "^0.14.1"
 	}
 }
