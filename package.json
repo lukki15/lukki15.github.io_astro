@@ -15,15 +15,15 @@
 	},
 	"devDependencies": {
 		"@astrojs/lit": "^4.3.0",
-		"@astrojs/mdx": "^3.1.5",
-		"@astrojs/sitemap": "^3.1.6",
-		"@iconify-json/ic": "^1.2.0",
-		"@iconify-json/mdi": "^1.2.0",
+		"@astrojs/mdx": "^3.1.8",
+		"@astrojs/sitemap": "^3.2.1",
+		"@iconify-json/ic": "^1.2.1",
+		"@iconify-json/mdi": "^1.2.1",
 		"@webcomponents/template-shadowroot": "^0.2.1",
-		"astro": "^4.15.4",
+		"astro": "^4.16.7",
 		"astro-icon": "^1.1.1",
-		"date-fns": "^3.6.0",
-		"lit": "^3.2.0",
+		"date-fns": "^4.1.0",
+		"lit": "^3.2.1",
 		"prettier-plugin-astro": "^0.14.1"
 	}
 }
