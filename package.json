@@ -11,6 +11,7 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
+		"check": "astro check",
 		"format": "npx prettier -w ."
 	},
 	"devDependencies": {
@@ -25,5 +26,9 @@
 		"date-fns": "^4.1.0",
 		"lit": "^3.2.1",
 		"prettier-plugin-astro": "^0.14.1"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.4",
+		"typescript": "^5.7.2"
 	}
 }
