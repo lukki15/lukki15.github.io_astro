@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/lit": "^4.3.0",
-		"@astrojs/mdx": "^4.0.2",
+		"@astrojs/mdx": "^4.0.5",
 		"@astrojs/sitemap": "^3.2.1",
 		"@iconify-json/ic": "^1.2.1",
 		"@iconify-json/mdi": "^1.2.1",
