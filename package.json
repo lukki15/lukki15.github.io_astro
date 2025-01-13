@@ -21,7 +21,7 @@
 		"@iconify-json/ic": "^1.2.1",
 		"@iconify-json/mdi": "^1.2.1",
 		"@webcomponents/template-shadowroot": "^0.2.1",
-		"astro": "^5.0.5",
+		"astro": "^5.1.5",
 		"astro-icon": "^1.1.4",
 		"date-fns": "^4.1.0",
 		"lit": "^3.2.1",
